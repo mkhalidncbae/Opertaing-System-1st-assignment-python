@@ -1,0 +1,190 @@
+Q NO. 4-11. My pizzas, your pizzas start with your program from exercise 4-1(page 60). Make a copy of list of pizzas call it friend pizza.
+
+
+khalid_pizzas_list=['Fajeeta', 'BoneFire', 'Shahi Tikka']
+friend_pizzas=khalid_pizzas_list
+khalid_pizzas_list.append('Crown')
+print('My favourite Pizzas are:')
+for pizza in khalid_pizzas_list:
+  print(pizza)
+khalid_pizzas_list.remove('Crown')
+friend_pizzas.append('Chicken tikka')
+print('\nMy friends favourite Pizzas are:')
+for pizzas in friend_pizzas:
+  print(pizzas)
+     
+My favourite Pizzas are:
+Fajeeta
+BoneFire
+Shahi Tikka
+Crown
+
+My friends favourite Pizzas are:
+Fajeeta
+BoneFire
+Shahi Tikka
+Chicken tikka
+Q.NO. 4.13- Buffet: A buffet style resturaunt offers only five basic foods. Think of five basic foods and store them in a tuple.
+
+
+khalid_foods=('Chicken', 'Handi','Mutton','Fish','Daal')
+print('Restaurant five foods are:')
+for khalid_foods in khalid_foods:
+  print(khalid_foods)
+khalid_foods[0]= 'Sindhi Biryani'
+
+     
+Restaurant five foods are:
+Chicken
+Handi
+Mutton
+Fish
+Daal
+khalid_foods={'Rice','Tikka','Daal','Mutton','Saag'}
+print("Revised menu of Resturaunt is:")
+for foods in khalid_foods:
+  print(foods)
+     
+Revised menu of Resturaunt is:
+Mutton
+Rice
+Saag
+Daal
+Tikka
+Q NO. 6-3. Glossary: A python dictionary can be used to model actual dictionary. However to avoid confusion lets call it glossary.
+
+
+khalid_langauges={
+                 'int':'integer values which contain whole numbers',
+                 'float':'real Values',
+                 'char':'a single character',
+                 'string':'collection of characters',
+                 'bool':'bolean values which are true or false'
+                 }
+for key, value in khalid_langauges.items():
+  print(key+ ": Means "+value.title())
+  print('\n')
+     
+int: Means Integer Values Which Contain Whole Numbers
+
+
+float: Means Real Values
+
+
+char: Means A Single Character
+
+
+string: Means Collection Of Characters
+
+
+bool: Means Bolean Values Which Are True Or False
+
+
+6-11.Cities: Make a dictionary called cities.Use the names of three cities as keys in your dictionary.
+
+
+cities={
+    'Multan':{'Country':'Pakitan','Population':'10lac','Fact':'City of Saints'},
+    'Murree':{'Country':'Pakistan','Population':'15lac','Fact':'City of greenery and hills'},
+    'Islamabad':{'Country':'Pakistan','Population':'5lac','Fact':'Capital of Pakistan'}
+}
+for city,inf in cities.items():
+  print('\n Name of City:'+city )
+  print('\t It is located in ' +inf['Country'])
+  print('\t Its population is ' +inf['Population'])
+  print('\t Its main fact is ' +inf['Fact'])
+     
+ Name of City:Multan
+	 It is located in Pakitan
+	 Its population is 10lac
+	 Its main fact is City of Saints
+
+ Name of City:Murree
+	 It is located in Pakistan
+	 Its population is 15lac
+	 Its main fact is City of greenery and hills
+
+ Name of City:Islamabad
+	 It is located in Pakistan
+	 Its population is 5lac
+	 Its main fact is Capital of Pakistan
+Q NO. 5-2: More conditional tests.You don't have to limit the number of tests you create to 10.
+
+
+from pickle import TRUE
+children_khalid="Maaz"
+print(children_khalid=="Dua")
+print(children_khalid=="Maaz")
+print(children_khalid!="dua")
+print(children_khalid!="Maaz")
+print("\n")
+print(children_khalid.lower()=="Maaz")
+print(children_khalid.lower()=="maaz")
+print("\n")
+number_khalid=20
+print(number_khalid==15)
+print(number_khalid!=13)
+print(number_khalid>=18)
+print(number_khalid<=20)
+print(number_khalid>10)
+print(number_khalid<25)
+print("\n")
+khalid_height=5.9
+khalid_age=31
+print(khalid_height>13 and khalid_age<=29)
+print(khalid_age<34 or khalid_height>=5)
+print("\n")
+khalid_list=[20,30,670,125,567,34,90]
+khalid_item=68
+for item in khalid_list:
+  if(khalid_item==item):
+    khalid_item=True
+if(khalid_item==item):
+   print("Item is available in the list")
+else:
+   print("Item is not available in the list")
+  False
+True
+True
+False
+False
+True
+False
+True
+True
+True
+True
+True
+False
+True
+
+Item is not available in the list
+Q NO. 6-12. Extensions: We are now working with examples that are complex enough that they can be extended in any number of ways.
+fav_lang_khalid={
+    'jen':'python',
+    'sara':'c',
+    'edward':'ruby',
+    'phill':'python'
+}
+print("The items in the dictionary are:")
+for key,value in fav_lang_khalid.items():
+  print(key.title()+" favourite language is "+value.title())
+fav_lang_khalid['khalid']='c++'
+fav_lang_khalid['maaz']='java'
+print('\n')
+for key,value in fav_lang_khalid.items():
+  print(key.title()+" favourite lamguage is "+value.upper())
+     
+The items in the dictionary are:
+Jen favourite language is Python
+Sara favourite language is C
+Edward favourite language is Ruby
+Phill favourite language is Python
+
+
+Jen favourite lamguage is PYTHON
+Sara favourite lamguage is C
+Edward favourite lamguage is RUBY
+Phill favourite lamguage is PYTHON
+khalid favourite lamguage is C++
+Maaz favourite lamguage is JAVA
